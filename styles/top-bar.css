@@ -1,43 +1,78 @@
 /* Header */
 
 /* Top Bar */
-.header-top-bar-container{
-    display: flex;
-	color:#000;
+.header-top-bar-container {
+  display: flex;
+  align-items: center;
+  color: #000;
 }
 
-.phone{
-    margin-right:7rem;
+.top-icon-wrapper {
+  margin-right: 1rem;
+  display: flex;
+}
+
+.phone {
+  margin-right: 7rem;
 }
 
 /* Top Logo */
-.top-logo-bar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.top-logo-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.header-btn{
-    background-color: #6bb140;
-    color: #fff;
-    font-size: 18px;
-    border: none;
-    width: 135px;
-    height: 50px;
+.header-btn {
+  background-color: #6bb140;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  width: 135px;
+  height: 50px;
+  font-weight: 700;
+}
+
+/* nav menu */
+@media (min-width: 768px) {
+  #mega-menu-primary-menu {
+    display: flex !important;
+    justify-content: space-around;
+  }
 }
 
 /* divi fixes */
 
-#et-boc > header > div > div.et_pb_section.et_pb_section_1_tb_header.et_section_regular > div{
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+#et-boc
+  > header
+  > div
+  > div.et_pb_section.et_pb_section_0_tb_header.et_pb_with_background.et_section_regular {
+  display: flex;
+  align-items: center;
 }
 
-#et-boc > header > div > div.et_pb_section.et_pb_section_2_tb_header.et_pb_with_background.et_section_regular > div{
-    min-height: unset;
+#et-boc
+  > header
+  > div
+  > div.et_pb_section.et_pb_section_1_tb_header.et_section_regular
+  > div {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
-#et-boc > header > div > div.et_pb_section.et_pb_section_2_tb_header.et_pb_with_background.et_section_regular > div {
-    padding-top: 5px;
-    padding-bottom: 5px;
+#et-boc
+  > header
+  > div
+  > div.et_pb_section.et_pb_section_2_tb_header.et_pb_with_background.et_section_regular
+  > div {
+  min-height: unset;
+}
+
+#et-boc
+  > header
+  > div
+  > div.et_pb_section.et_pb_section_2_tb_header.et_pb_with_background.et_section_regular
+  > div {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
