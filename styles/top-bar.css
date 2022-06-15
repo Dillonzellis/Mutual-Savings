@@ -173,6 +173,45 @@
   margin: auto;
 }
 
+.home-cta-2col-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.home-cta-right-header {
+  font-family: Myriad Pro;
+  line-height: 40px;
+  font-size: 32px;
+  color: #005595;
+}
+
+.home-cta-hr {
+  border-top: 3px solid green;
+  width: 6.5rem;
+  margin-right: 100%;
+}
+
+.home-list-container{
+  margin-top: 2rem;
+}
+
+.home-list-wrapper{
+  display: flex;
+  margin-bottom: 1.25rem;
+
+}
+
+.check-mark{
+  margin-right: 1.5rem;
+}
+
+.home-list-item {
+  font-size: 16px;
+  font-family: Roboto;
+  color: #000;
+}
+
 /* divi fixes */
 #post-102 > div > div > div > div > div.et_pb_row.et_pb_row_2 {
   padding-top: 0 !important;
