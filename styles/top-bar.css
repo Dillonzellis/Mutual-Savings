@@ -16,6 +16,15 @@
   margin-right: 7rem;
 }
 
+@media (min-width: 768px) {
+  .email > a {
+    display: block !important;
+  }
+}
+.email > a {
+  display: none;
+}
+
 /* Top Logo */
 .top-logo-bar {
   display: flex;
@@ -31,6 +40,7 @@
   width: 135px;
   height: 50px;
   font-weight: 700;
+  margin-left: 3rem;
 }
 
 /* nav menu */
@@ -39,6 +49,10 @@
     display: flex !important;
     justify-content: space-around;
   }
+}
+
+.mega-sub-menu .mega-menu-link:hover {
+  border-left: 2px solid #ee0d08 !important;
 }
 
 /* divi fixes */
@@ -75,4 +89,91 @@
   > div {
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+.top-img {
+  max-width: unset;
+  height: unset;
+}
+
+/* service cards */
+
+.service-container {
+  position: relative;
+  margin-bottom: 14rem;
+}
+
+.service-img {
+  background-image: url("https://dev1.growthbydesign.org/wp-content/uploads/2022/06/BG.png");
+  min-height: 800px;
+  /* max-width: 80%; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.service-cards-container {
+  display: flex;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+}
+
+.col {
+  margin-right: 35px;
+}
+
+.service-card {
+  min-height: 340px;
+  max-width: 370px;
+  border: solid 1px black;
+  border-radius: 28px;
+  box-shadow: 0px 1px 12px 1px #262a4c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  margin-bottom: 35px;
+  background-color: #fff;
+}
+
+.service-card-header {
+  font-size: 20px;
+  color: #005595;
+  font-family: myriad pro;
+  font-weight: 600;
+}
+
+.service-card-body {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Roboto;
+  padding: 0 20px;
+}
+
+.service-card-btn {
+  font-size: 16px;
+  font-weight: 600;
+  color: #6bb140;
+  font-family: myriad pro;
+}
+
+/* home cta */
+
+.home-cta-header {
+  font-family: Roboto;
+}
+
+.home-cta-sub-header {
+  color: #000;
+  font-size: 18px;
+  text-align: center;
+  max-width: 70%;
+  margin: auto;
+}
+
+/* divi fixes */
+#post-102 > div > div > div > div > div.et_pb_row.et_pb_row_2 {
+  padding-top: 0 !important;
 }
