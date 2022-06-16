@@ -104,13 +104,28 @@
   margin-top: 5.5rem;
 }
 
+@media (max-width: 768px) {
+  .service-container {
+    margin-bottom: 0;
+    margin-top: 38px;
+  }
+}
+
 .service-img {
   background-image: url("https://dev1.growthbydesign.org/wp-content/uploads/2022/06/BG.png");
   min-height: 800px;
-  /* max-width: 80%; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+@media (max-width: 768px) {
+  .service-img {
+    min-height: 253px;
+    width: 100%;
+    background-size: cover;
+    position: absolute;
+  }
 }
 
 .service-cards-container {
@@ -120,7 +135,15 @@
   left: 40%;
 }
 
-.service-header-wrapper{
+@media (max-width: 768px) {
+  .service-cards-container {
+    display: block;
+    position: static;
+    margin-top: 100px;
+  }
+}
+
+.service-header-wrapper {
   display: flex;
   justify-content: center;
 }
@@ -133,20 +156,34 @@
   position: absolute;
   top: 8%;
   text-align: center;
-  /* left: 30%;
-  right: 30%; */
   max-width: 680px;
+}
+
+@media (max-width: 768px) {
+  .service-header {
+    font-size: 1.5rem;
+    position: static;
+    max-width: 349px;
+    z-index: 500;
+    margin-top: 108px;
+  }
 }
 
 .col {
   margin-right: 35px;
 }
 
+@media (max-width: 768px) {
+  .col {
+    margin-right: 0;
+  }
+}
+
 .service-card {
   min-height: 340px;
   max-width: 370px;
   border-radius: 28px;
-  box-shadow: 0px 1px 16px 1px #262a4c45;;
+  box-shadow: 0px 1px 16px 1px #262a4c45;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -154,6 +191,14 @@
   text-align: center;
   margin-bottom: 35px;
   background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .service-card {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+  }
 }
 
 .service-card-header {
@@ -188,6 +233,27 @@
   font-family: Roboto;
 }
 
+@media (max-width: 768px) {
+  .home-cta-header {
+    line-height: 45px;
+  }
+}
+
+@media (max-width: 768px) {
+  #post-102 > div > div > div > div > div.et_pb_row.et_pb_row_0 {
+    padding-bottom: 10px;
+  }
+  #post-102 > div > div > div > div > div.et_pb_row.et_pb_row_1 {
+    padding-top: 10px;
+  }
+  #post-102 > div > div > div > div > div.et_pb_row.et_pb_row_2{
+    padding-bottom: 10px;
+  }
+  #post-102 > div > div > div > div > div.et_pb_row.et_pb_row_3{
+    padding-top: 10px;
+  }
+}
+
 .home-cta-sub-header {
   color: #000;
   font-size: 18px;
@@ -197,16 +263,35 @@
   margin-bottom: 1.5rem;
 }
 
+@media (max-width: 768px) {
+  .home-cta-sub-header {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+}
+
 .home-cta-2col-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+@media (max-width: 768px) {
+  .home-cta-2col-container {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-cta-left-col {
+    margin-bottom: 17px;
+  }
+}
+
 .home-cta-right-header {
   font-family: Myriad Pro;
   line-height: 40px;
-  font-size: 32px;
+  font-size: 2rem;
   color: #005595;
 }
 
@@ -219,6 +304,12 @@
 .home-list-container {
   margin-top: 2rem;
   margin-bottom: 3.5rem;
+}
+
+@media (max-width: 768px) {
+  .home-list-container {
+    margin-bottom: 1.5rem;
+  }
 }
 
 .home-list-wrapper {
@@ -236,7 +327,7 @@
   color: #000;
 }
 
-.btn{
+.btn {
   font-size: 16px;
   font-family: Myriad Pro;
   padding: 16px 30px;
@@ -248,15 +339,53 @@
 .btn > a {
   text-decoration: none;
   color: #fff;
+  display: flex;
+  align-items: center;
 }
 
 .btn > a > img {
   margin-left: 5px;
 }
 
-
-
 /* divi fixes */
 #post-102 > div > div > div > div > div.et_pb_row.et_pb_row_2 {
   padding-top: 0 !important;
+}
+
+/* footer */
+
+.contact-col {
+  line-height: 30px;
+  color: #fff;
+}
+
+.contact-header {
+  font-size: 18px;
+  font-family: Myriad Pro;
+  margin-bottom: 1.5rem;
+}
+
+.contact-items {
+  font-size: 16px;
+  font-weight: light;
+  font-family: Open Sans;
+}
+
+.contact-address {
+  margin-bottom: 1.5rem;
+}
+
+.contact-email > a {
+  color: #fff;
+}
+
+.useful-links {
+  margin-bottom: 1rem;
+  font-family: Roboto;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
